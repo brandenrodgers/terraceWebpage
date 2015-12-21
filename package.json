@@ -1,0 +1,38 @@
+{
+  "name": "terrace_website",
+  "version": "0.0.0",
+  "description": "1 Terrace Website",
+  "main": "server.js",
+  "style": "*.css",
+  "scripts": {
+    "watch": "watchify browser.js -o public/js/build.js -v",
+    "browserify": "browserify browser.js | uglifyjs > public/js/build.js",
+    "build": "npm run browserify ",
+    "start": "npm run watch & nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Branden Rodgers",
+  "dependencies": {
+    "express": "~4.9.7",
+    "express-handlebars": "~1.1.0",
+    "history": "^1.13.1",
+    "less-middleware": "^2.0.1",
+    "mongoose": "^3.8.23",
+    "node-jsx": "~0.12.4",
+    "react": "~0.13.3",
+    "react-router": "^0.13.1",
+    "socket.io": "^1.1.0"
+  },
+  "devDependencies": {
+    "browserify": "~6.0.3",
+    "nodemon": "^1.2.1",
+    "reactify": "~1.0.0",
+    "uglify-js": "~2.4.15",
+    "watchify": "^3.1.1"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}
