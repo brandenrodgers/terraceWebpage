@@ -24,6 +24,7 @@ app.engine('handlebars', exphbs({ defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 // Compile .less files to css
+// Add debug: true if experiencing issues
 app.use(lessMiddleware(path.join(__dirname, 'stylesheets'), {
   dest: path.join(__dirname, 'public'),
   preprocess: {
@@ -53,7 +54,7 @@ app.get('*', function (req, res) {
   });
 })
 
-// Sstart our server
+// Start our server
 var server = http.createServer(app).listen(port, function() {
   console.log('Express server listening on port ' + port);
 });
