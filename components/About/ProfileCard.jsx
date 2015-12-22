@@ -1,13 +1,9 @@
 /** @jsx React.DOM */
 
 var React = require('react');
-var Config = require('../../Config');
-
-// Components
-var ProfileCard = require('./ProfileCard.jsx');
 
 // Export the TestApp component
-module.exports = AboutPage = React.createClass({
+module.exports = ProfileCard = React.createClass({
 
   // Set the initial component state
   getInitialState: function(props){
@@ -16,7 +12,7 @@ module.exports = AboutPage = React.createClass({
 
     // Set initial application state using props
     return {
-      count: 0
+      image: 'http://imgur.com/gallery/psfNQzP'
     };
 
   },
@@ -37,15 +33,21 @@ module.exports = AboutPage = React.createClass({
   render: function(){
 
     return (
-      <div className={'about-page'}>
-        <div className={'about-page-title'}>About Us</div>
-        <div className={'about-page-content'}> { Config.people.map(function(person, index){
-          var key = person.id;
-          return <ProfileCard key={key} person={person}/>;
-        }) }
+      <div className={'profile-card'}>
+        <div className={'profile-card-name'}>{this.props.person.name}</div>
+        <div className={'profile-card-info'}>
+          <div className={'profile-card-image-wrapper'}>
+            <div className={'profile-card-image'}>
+              <img src='http://i.imgur.com/N8rOudd.jpg' />
+            </div>
+          </div>
+          <div className={'profile-card-body-wrapper'}>
+            <div className={'profile-card-body'}>Profile Card Info</div>
+          </div>
         </div>
       </div>
     )
   }
 
 });
+
