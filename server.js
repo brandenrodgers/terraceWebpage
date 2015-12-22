@@ -41,7 +41,7 @@ app.use("/", express.static(path.join(__dirname, 'public')));
 app.disable('etag');
 
 // Connect to our mongo database
-//mongoose.connect('mongodb://localhost/react-tweets');
+// mongoose.connect(Config.dbUrl);
 
 // Static routes
 app.get('*', function (req, res) {
