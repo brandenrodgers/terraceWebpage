@@ -2,7 +2,7 @@
 
 .profile-card
 {
-	width: 450px;
+	width: 480px;
 	height: 250px;
 
 	background: url('../images/light_grey.png');
@@ -20,14 +20,16 @@
 	text-align: center;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 20px;
+    letter-spacing: 3px;
     color: #2c3e50;
-
+    background: #3c4143;
+    color: #c8ccd0;
 	display: block;
 }
 
 .profile-card-info
 {
-    width: 440px;
+    width: 470px;
     height: 210px;
     text-align: left;
 	display: -webkit-flex;
@@ -52,19 +54,39 @@
 
 .profile-card-image img
 {
-	max-width: 140px;
-	max-height: 200px;
+	max-width: 130px;
+	max-height: 190px;
+	border-radius: 10px;
 }
 
 .profile-card-body-wrapper
 {
-    background: pink;
-    width: 290px;
-    height: inherit;
+    width: 305px;
+    height: 190px;
+    margin: 10px 0 0 0;
+
+    background: white; 
+
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .profile-card-body
 {
-    background: orange;
+    margin: 5px 0 0 3px;
 	display: block;
+}
+
+.profile-card-body a
+{
+    border-bottom: 1px solid blue;
+    color: blue;
+    cursor: pointer;
+}
+
+.profile-card-body a:hover
+{
+    color: purple;
+    border-bottom: 1px solid purple;
 }

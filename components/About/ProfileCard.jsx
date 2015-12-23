@@ -38,11 +38,16 @@ module.exports = ProfileCard = React.createClass({
         <div className={'profile-card-info'}>
           <div className={'profile-card-image-wrapper'}>
             <div className={'profile-card-image'}>
-              <img src='http://i.imgur.com/N8rOudd.jpg' />
+              <img src={this.props.person.image} />
             </div>
           </div>
           <div className={'profile-card-body-wrapper'}>
-            <div className={'profile-card-body'}>Profile Card Info</div>
+            <div className={'profile-card-body'}>
+              <div>Major: {this.props.person.major}</div>
+              <div>Age: {this.props.person.age}</div>
+              <div>Website: {this.props.person.website}</div>
+              <div>LinkedIn:<a href={this.props.person.linkedin}> {this.props.person.linkedin}</a></div>
+            </div>
           </div>
         </div>
       </div>
