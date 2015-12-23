@@ -1,6 +1,8 @@
 /** @jsx React.DOM */
 
 var React = require('react');
+var Config = require('../../Config');
+var urlPath = Config.host + ':' + Config.port + '/images/';
 
 // Export the TestApp component
 module.exports = ProfileCard = React.createClass({
@@ -38,7 +40,7 @@ module.exports = ProfileCard = React.createClass({
         <div className={'profile-card-info'}>
           <div className={'profile-card-image-wrapper'}>
             <div className={'profile-card-image'}>
-              <img src={this.props.person.image} />
+              <img src={urlPath + this.props.person.image} />
             </div>
           </div>
           <div className={'profile-card-body-wrapper'}>

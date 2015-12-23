@@ -8,7 +8,7 @@ module.exports = {
   	{
   		id: 'brandenrodgers',
   		name: "Branden Rodgers",
-  		image: './images/branden_avatar.png',
+  		image: 'branden_avatar.png',
   		age: 21,
       major: "Computer Science / Marketing",
   		website: "path-to-your-website",
@@ -17,7 +17,7 @@ module.exports = {
   	{
   		id: 'briancox',
   		name: "Brian Cox",
-  		image: './images/branden_avatar.png',
+  		image: 'brian_avatar.png',
   		age: 21,
       major: "Computer Science / Business Management",
   		website: "path-to-your-website",
@@ -26,7 +26,7 @@ module.exports = {
   	{
   		id: 'rayoconnor',
   		name: "Ray O'Connor",
-  		image: './images/branden_avatar.png',
+  		image: 'ray_avatar.png',
   		age: 21,
       major: "Computer Science / Business Management",
   		website: "path-to-your-website",
@@ -35,7 +35,7 @@ module.exports = {
   	{
   		id: 'markmillstein',
   		name: "Mark Millstein",
-  		image: './images/branden_avatar.png',
+  		image: 'mark_avatar.png',
   		age: 21,
       major: "Computer Science / Math",
   		website: "path-to-your-website",
@@ -44,7 +44,7 @@ module.exports = {
   	{
   		id: 'jjsurkin',
   		name: "JJ Surkin",
-  		image: './images/branden_avatar.png',
+  		image: 'jj_avatar.png',
   		age: 21,
       major: "Graphic Design",
   		website: "path-to-your-website",
