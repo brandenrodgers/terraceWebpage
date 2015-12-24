@@ -33,7 +33,10 @@ module.exports = HomePage = React.createClass({
   render: function(){
 
     return (
-       <div>Home Page</div>
+      <div className={'home-page'}>
+        <img className={'home-page-icon'} src={'http://localhost:3000/images/terrace_icon.png'} />
+        <div className={'home-page-title'}>Welcome Bitches</div>
+      </div>
     )
   }
 
