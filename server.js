@@ -47,9 +47,10 @@ app.disable('etag');
 app.get('*', function (req, res) {
   Router.run(routes, req.path, function (Handler) {
     var markup = React.renderToString(React.createElement(Handler));
+    var path = req.path;
     res.render('home', {
       markup: markup,
-      state: JSON.stringify({test:0})
+      state: JSON.stringify({path:path})
     });
   });
 })

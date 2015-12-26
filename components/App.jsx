@@ -9,13 +9,19 @@ var PageHeader = require('./PageHeader.jsx');
 
 module.exports = App = React.createClass({
   render: function () {
+
+    var navItems = [
+      {link: "homePage", text: "Home", pathName: "/home"},
+      {link: "aboutPage", text: "About", pathName: "/about"}
+    ];
+
     return (
       <div>
         <section>
           <div className={'page-top-wrapper'}>
             <div className={'page-top'}>
               <PageHeader/>
-              <NavBar/>
+              <NavBar path={this.props.path} navItems={navItems} />
             </div>
           </div>
           <RouteHandler/>
