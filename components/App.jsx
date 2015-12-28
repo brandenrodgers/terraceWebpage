@@ -12,6 +12,7 @@ module.exports = App = React.createClass({
 
     var navItems = [
       {link: "homePage", text: "Home", pathName: "/home"},
+      {link: "boardPage", text: "Idea Board", pathName: "/board"},
       {link: "aboutPage", text: "About", pathName: "/about"}
     ];
 
